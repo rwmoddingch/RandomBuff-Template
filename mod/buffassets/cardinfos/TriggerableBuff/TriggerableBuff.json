@@ -1,0 +1,17 @@
+{
+    "FaceName": "White",
+    "BuffID" : "Template.TriggerableBuff",
+    "BuffType" : "Positive",
+    "BuffProperty" : "Normal",
+    "Triggerable" : true,
+    "Color" : "000000",
+
+    "Chinese" : {
+        "BuffName" : "天降宝札",
+        "Description" : "触发时给予玩家5根炸矛"
+    },
+    "English" : {
+        "BuffName" : "Divine Treasure",
+        "Description" : "Grants the player 5 explosive spears when triggered."
+    }
+}
