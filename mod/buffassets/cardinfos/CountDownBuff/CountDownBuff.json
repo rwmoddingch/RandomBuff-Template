@@ -1,0 +1,17 @@
+{
+    "FaceName": "White",
+    "BuffID" : "Template.CountDownBuff",
+    "BuffType" : "Positive",
+    "BuffProperty" : "Normal",
+    "Triggerable" : false,
+    "Color" : "000000",
+
+    "Chinese" : {
+        "BuffName" : "速度提升",
+        "Description" : "在5轮回内提升玩家的移动速度"
+    },
+    "English" : {
+        "BuffName" : "Speed Boost",
+        "Description" : "Increases the player's movement speed for 5 turns."
+    }
+}

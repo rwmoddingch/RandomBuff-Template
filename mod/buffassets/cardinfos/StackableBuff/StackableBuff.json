@@ -1,0 +1,18 @@
+{
+    "FaceName": "White",
+    "BuffID" : "Template.StackableBuff",
+    "BuffType" : "Positive",
+    "BuffProperty" : "Normal",
+    "Triggerable" : false,
+    "Stackable": true,
+    "Color" : "000000",
+
+    "Chinese" : {
+        "BuffName" : "眩晕护盾",
+        "Description" : "眩晕接触到护盾的生物，随叠层数提高，护盾增加"
+    },
+    "English" : {
+        "BuffName" : "Stun Shield",
+        "Description" : "Stun creature comes into contact with the shield, the shield's layers increase, providing additional protection."
+    }
+}

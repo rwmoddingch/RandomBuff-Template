@@ -1,0 +1,17 @@
+{
+    "FaceName": "White",
+    "BuffID" : "Template.SimpleBuff",
+    "BuffType" : "Positive",
+    "BuffProperty" : "Normal",
+    "Triggerable" : false,
+    "Color" : "000000",
+
+    "Chinese" : {
+        "BuffName" : "失温免疫",
+        "Description" : "免疫失温带来的影响"
+    },
+    "English" : {
+        "BuffName" : "Hypothermia Immunity",
+        "Description" : "Immune to the effects of hypothermia."
+    }
+}

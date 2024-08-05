@@ -1,0 +1,9 @@
+{
+	"id": "bufftemplate",
+	"name": "Buff Template",
+	"version": "1.0.0",
+	"authors": "",
+	"description": "",
+	"requirements": ["moreslugcats", "expedition","randombuff"],
+	"requirements_names": ["More Slugcats Expansion","Expedition","Random Buff"]
+}
