@@ -2,6 +2,8 @@
 using RandomBuff.Core.Buff;
 using RandomBuff.Core.Entry;
 using System.Security.Permissions;
+using RandomBuff.Core.Game.Settings.Missions;
+using BuffTemplate.Missions;
 
 #pragma warning disable CS0618
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
@@ -17,6 +19,7 @@ namespace BuffTemplate
             BuffRegister.RegisterBuff<TriggerableBuff, TriggerableBuffData>(BuffEnums.TriggerableBuff);
             BuffRegister.RegisterBuff<CountDownBuff, CountDownBuffData, CountDownBuffHook>(BuffEnums.CountDownBuff);
             BuffRegister.RegisterBuff<StackableBuff, StackableBuffData, StackableBuffHook>(BuffEnums.StackableBuff);
+
         }
 
     }
@@ -36,5 +39,6 @@ namespace BuffTemplate
         //public static readonly BuffID WitHudBuff = new BuffID("Template.WitHudBuff", true);
         //public static readonly BuffID WitTimerBuff = new BuffID("Template.WitHudBuff", true);
 
+        public static readonly MissionID TemplateMission = new MissionID("Template.Mission", true);
     }
 }
