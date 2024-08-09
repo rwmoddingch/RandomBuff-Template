@@ -15,9 +15,14 @@ namespace BuffTemplate.Buffs
     {
         public override BuffID ID => BuffEnums.TriggerableBuff;
 
+        //在卡牌被触发的时候调用，返回true则删除卡牌，false则不删除
+        //Called when the card is triggered. Return true to delete the card, false to not delete it
         public override bool Trigger(RainWorldGame game)
         {
             var alivePlayer = game.AlivePlayers.FirstOrDefault(i => i.realizedCreature != null && i.realizedCreature.room != null);
+
+            //没有存货玩家
+            //no alive player
             if (alivePlayer == null)
                 return false;
 
