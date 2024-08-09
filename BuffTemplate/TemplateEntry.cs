@@ -9,12 +9,21 @@ using BuffTemplate.Missions;
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618
 
+// mod文件夹内有完整的mod结构
+// The mod folder contains the complete mod structure.
+
 namespace BuffTemplate
 {
     public class TemplateEntry : IBuffEntry
     {
+        // 请将生成的dll/pdb文件放置在buffplugins内
+        // Please place the generated DLL/PDB files in the buffplugins directory.
         public void OnEnable()
         {
+            // 注册Buff
+            // 注意: 注册的buff必须存在对应的json文件才能正常使用
+            // Register Buff
+            // Note: The registered Buff must have a corresponding JSON file to function properly.
             BuffRegister.RegisterBuff<SimpleBuff, SimpleBuffData, SimpleBuffHook>(BuffEnums.SimpleBuff);
             BuffRegister.RegisterBuff<TriggerableBuff, TriggerableBuffData>(BuffEnums.TriggerableBuff);
             BuffRegister.RegisterBuff<CountDownBuff, CountDownBuffData, CountDownBuffHook>(BuffEnums.CountDownBuff);
@@ -25,8 +34,6 @@ namespace BuffTemplate
     }
 
 
-    //务必保持ID的独特
-    //各种功能可以组合使用
     internal static class BuffEnums
     {
 

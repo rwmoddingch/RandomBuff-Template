@@ -28,6 +28,7 @@ namespace BuffTemplate.Buffs
                     if(player == null) continue;
 
                     //这种更改玩家属性的方法有更好的兼容性
+                    //This method of modifying player attributes offers better compatibility.
                     player.slugcatStats.Modify(this, PlayerUtils.Multiply, "runspeedFac", 1.5f);            //  player.slugcatStats.runspeedFac *= 1.5f;
                     player.slugcatStats.Modify(this, PlayerUtils.Multiply, "corridorClimbSpeedFac", 1.5f);  //  player.slugcatStats.corridorClimbSpeedFac *= 1.5f;
                     player.slugcatStats.Modify(this, PlayerUtils.Multiply, "poleClimbSpeedFac", 1.5f);      //  player.slugcatStats.poleClimbSpeedFac *= 1.5f;
@@ -41,6 +42,7 @@ namespace BuffTemplate.Buffs
             base.Destroy();
 
             //在删除时撤销所有对玩家属性的修改
+            //Revert all modifications to player attributes upon deletion.
             PlayerUtils.UndoAll(this);
         }
     }
